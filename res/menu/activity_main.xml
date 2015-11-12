@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+            android:id="@+id/mainMenu"
+            android:icon="@drawable/ic_action_overflow"
+            android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/item4" android:icon="@drawable/eng" android:title="English"></item>
+            <item android:id="@+id/item5" android:icon="@drawable/rus" android:title="Russian"></item>
+        </menu>
+    </item>
+</menu>

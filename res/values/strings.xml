@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cut Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="pro_no">Product No</string>
+    <string name="mills_type">Type of Mill</string>
+    <string name="sub_type">Feature</string>
+    <string name="hardness">Hardness</string>
+    <string name="dia_meter">Diameter</string>
+    <string name="shap_cut">Shape of Cut</string>
+    <string name="work_material">Work Material</string>
+    <string name="flute_count">Flute Count</string>
+    <string name="min_val">0</string>
+    <string name="max_val">Max</string>
+    <string name="width_ofcut">Width of Cut</string>
+    <string name="deptofcut">Depth of cut</string>
+    <string name="backtospeed">Back to Speed</string>
+    <string name="speedrate">Feed Rate</string>
+    <string name="Side">Side</string>
+    <string name="Slot">Slot</string>
+
+    <string-array name="types_of_umills">
+        <item>Aluminium processing ball nose end mill - xAABN</item>
+        <item>Aluminium processing square end mill - xAAS</item>
+        <item>Ball nose end mill - xBNM</item>
+        <item>Center drill - 60CD</item>
+        <item>Corner radius end mill - xCRM</item>
+        <item>Corner rounding cutter - xCRC</item>
+        <item>Drill end mill - 2DEM</item>
+        <item>For stainless steel processing square end mill - xSSS</item>
+        <item>Half-roughing end mill - xHREM</item>
+        <item>High helix angle square end mill - xSHH</item>
+        <item>High-speed drill bit - 2HSD</item>
+        <item>High-speed drill bit within cold - 2HSDC-________-3xd</item>
+        <item>High-speed drill bit within cold - 2HSDC-________-5xd</item>
+        <item>L-groove cutter - LGC</item>
+        <item>Long neck short flute ball end mill - xLNSFSM</item>
+        <item>Long neck short flute corner radius end mill - xLNSFCR</item>
+        <item>Long neck short flute square end mill - xLNSFBN</item>
+        <item>Micro drill bit - 2MDD</item>
+        <item>Micro-dia ball nose end mill - xMBN</item>
+        <item>Micro-dia square end mill - xMSEM</item>
+        <item>NC Spotting drill bit - NCSD</item>
+        <item>Roughing end mill - xREM</item>
+        <item>Single flute square end mill - 1SEM</item>
+        <item>Square end mill - xSEM</item>
+        <item>Taper flute ball nose end mill - TBNM-xF</item>
+        <item>Taper flute square end mill - TSEM-xF</item>
+        <item>T-Blade cutter(tooth level) - HRxT</item>
+        <item>T-Blade cutter(wrong tooth) - HRxT_______X</item>
+        <item>V-groove cutter - VGC</item>
+        <item>Welding blade cutter sleeve - HRxT_S</item>
+        <item>Welding sets roughing cutter - HRxT_R</item>
+        <item>Welding thick cutter blade-type - xWTREM</item>
+        <item>Welding type long finishing mill - xWTFLF</item>
+        <item>Welding type standard finishing mill - xWTFEM</item>
+    </string-array>
+
+    <string-array name="product_no">
+        <item>xAABN-</item>
+        <item>xAAS-</item>
+        <item>xBNM-</item>
+        <item>60CD-</item>
+        <item>xCRM-</item>
+        <item>xCRC-</item>
+        <item>2DEM-</item>
+        <item>xSSS-</item>
+        <item>xHREM-</item>
+        <item>xSHH-</item>
+        <item>2HSD-</item>
+        <item>2HSDC-________-3xd</item>
+        <item>2HSDC-________-5xd</item>
+        <item>LGC-</item>
+        <item>xLNSFSM-</item>
+        <item>xLNSFCR-</item>
+        <item>xLNSFBN-</item>
+        <item>2MDD-</item>
+        <item>xMBN-</item>
+        <item>xMSEM-</item>
+        <item>NCSD-</item>
+        <item>xREM-</item>
+        <item>1SEM-</item>
+        <item>xSEM-</item>
+        <item>TBNM-xF</item>
+        <item>TSEM-xF</item>
+        <item>HRxT</item>
+        <item>HRxT_______X</item>
+        <item>VGC-</item>
+        <item>HRxT_S</item>
+        <item>HRxT_R</item>
+        <item>xWTREM</item>
+        <item>xWTFLF</item>
+        <item>xWTFEM</item>
+    </string-array>
+
+    <string-array name="uFluters_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="exit_press_back_twice_message">Please click BACK again to exit</string>
+    
+</resources>

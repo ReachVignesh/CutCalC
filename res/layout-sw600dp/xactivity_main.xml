@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/head2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/millstype"
+                android:layout_width="250dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="@string/mills_type"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/mills_types_Spinner"
+                android:layout_width="300dip"
+                android:layout_height="56dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/box"
+                android:paddingLeft="15dip"
+                android:paddingTop="5dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="30dip"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/scrolllinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_feature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/subtype"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/sub_type"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sub_types_Spinner"
+                        android:layout_width="300dip"
+                        android:layout_height="56dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/box"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_flutecount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_feature"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fcount"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/flute_count"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerid2"
+                        android:layout_width="300dip"
+                        android:layout_height="56dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/box"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_diameter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_flutecount"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/diam"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/dia_meter"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/edia_meter"
+                        android:layout_width="300dip"
+                        android:layout_height="56dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/box"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_hardness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_diameter"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hradness"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/hardness"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/hardness_mills"
+                        android:layout_width="300dip"
+                        android:layout_height="56dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/box"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="5dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_workmaterial"
+                    android:layout_marginLeft="20dip"
+                    android:text="@string/shap_cut"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layout_shapeofcut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/text_shape"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/rslid"
+                        android:layout_width="100dip"
+                        android:layout_height="80dip"
+                        android:layout_marginLeft="150dip"
+                        android:src="@drawable/blue_1" />
+
+                    <ImageView
+                        android:id="@+id/rslot"
+                        android:layout_width="100dip"
+                        android:layout_height="80dip"
+                        android:layout_marginLeft="50dip"
+                        android:src="@drawable/blue_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_workmaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_hardness"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/workmet"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/work_material"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerid1"
+                        android:layout_width="300dip"
+                        android:layout_height="56dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/box"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_shapeofcut"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="200dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dip"
+                        android:src="@drawable/aluminiumballendmill_2" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_widthofcut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_image" >
+
+                    <TextView
+                        android:id="@+id/woctxtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="@string/width_ofcut"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/widthofcut"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dip"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.ru.cutcalc.CustomSeekBar
+                        android:id="@+id/wcseekbar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_below="@+id/woctxtv"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/seekbarimage"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:progress="0"
+                        android:thumb="@drawable/gray"
+                        android:thumbOffset="12dip" />
+
+                    <LinearLayout
+                        android:id="@+id/laytxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_below="@+id/wcseekbar"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtv1mni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv1max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="550dip"
+                            android:text="max"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_depthofcut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_widthofcut" >
+
+                    <TextView
+                        android:id="@+id/doctxtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="@string/deptofcut"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/dipcuttext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dip"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.ru.cutcalc.CustomSeekBar
+                        android:id="@+id/dipcseekbar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_below="@+id/doctxtv"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/seekbarimage"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:progress="0"
+                        android:thumb="@drawable/gray"
+                        android:thumbOffset="12dip" />
+
+                    <LinearLayout
+                        android:id="@+id/laytxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_below="@+id/dipcseekbar"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtv2mni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv2max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="550dip"
+                            android:text="max"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_backtospeed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_depthofcut" >
+
+                    <TextView
+                        android:id="@+id/bactxtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dip"
+                        android:text="@string/backtospeed"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/revtext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dip"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.ru.cutcalc.CustomSeekBar
+                        android:id="@+id/btsseekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_below="@+id/bactxtv"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/seekbarimage"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:progress="0"
+                        android:thumb="@drawable/gray"
+                        android:thumbOffset="12dip" />
+
+                    <LinearLayout
+                        android:id="@+id/laytxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_below="@+id/btsseekbar"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtv3mni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv3max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="550dip"
+                            android:text="max"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedrate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_backtospeed"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/speedtxtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="18dip"
+                        android:text="@string/speedrate"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/cutspdtext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dip"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.ru.cutcalc.CustomSeekBar
+                        android:id="@+id/frseekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_below="@+id/speedtxtv"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/seekbarimage"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:progress="0"
+                        android:thumb="@drawable/gray"
+                        android:thumbOffset="12dip" />
+
+                    <LinearLayout
+                        android:id="@+id/laytxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_below="@+id/frseekbar"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtv4mni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dip"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtv4max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="550dip"
+                            android:text="max"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dip"
+        android:text="Message"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
